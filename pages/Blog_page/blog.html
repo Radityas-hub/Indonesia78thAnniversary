@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capres - Mediaku</title>
+    <link rel="shortcut icon" href="../../assets/logo.png" />
+
+    <!-- ================= css links ================= -->
+
+    <link rel="stylesheet" href="./blog-styles.css">
+    <link rel="stylesheet" href="global-styles.css">
+
+    <!-- ================= SweetAlert2 links ================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+
+    <!-- ================= Font Awesome links ================= -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+</head>
+
+<body>
+    
+    <!-- 
+        Source Gambar 
+        1. https://id.pinterest.com/pin/835558537089080645/
+        2. https://id.pinterest.com/c26a1e33-0a68-413f-aaa1-57cc8cb8b4af
+        3. https://rakyatntt.com/wp-content/uploads/2023/08/menkominfo.jpg
+        4. https://assets.pikiran-rakyat.com/crop/61x0:723x473/x/photo/2022/09/29/2175796253.jpeg
+        5. https://1.bp.blogspot.com/-pXJp6C0ejpY/YBTmt4PdgrI/AAAAAAAAOGE/M2DyCzdbuBQi9J6sW-BaIf5O_pqMf_TWwCLcBGAsYHQ/s720/snmptn.jpg
+        6. https://asset-2.tstatic.net/aceh/foto/bank/images/DPRD-DKI-Jakarta-dari-Fraksi-PDI-P-Cinta-Mega.jpg
+        7. https://cdn.antaranews.com/cache/1200x800/2023/04/25/Capres-RI_1.jpg
+        8. https://sinpo.id/storage/2022/12/laboratorium-suara-indonesia-rilis-survei-pilpres-2024-ini-hasilnya-16122022-174151.jpg
+        9. https://cdn0-production-images-kly.akamaized.net/CD9wRAPjNi0W7Pv7st5_jQfPdgE=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/4202081/original/074018900_1666614414-Ekspresi_Ganjar_Pranowo_Usai_Pertemuan_di_DPP_PDIP-Faizal-4.jpg
+        10. https://static.republika.co.id/uploads/images/inpicture_slide/ketua-umum-partai-gerindra-prabowo_230725234119-217.jpeg
+        11. https://pict.sindonews.net/dyn/850/pena/news/2023/03/05/12/1038559/perjalanan-karier-politik-anies-baswedan-hingga-menuju-pilpres-2024-zds.jpg
+        12. https://images-tm.tempo.co/all/2022/10/08/812557/812557_1200.jpg       
+    -->
+
+    <!-- ================= Navbar ================= -->
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <!-- <img src="../../assets/HUT RI 78_Logo Utama (Warna).png" alt="" class="logo-images"> -->
+                <a href="#">Mediaku</a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn" onclick="closeSidebar()">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li>
+                    <a href="../../index.html" class="nav-link" onclick="closeSidebar()">Beranda</a>
+                    <div class="nav-active-border"></div>
+                </li>
+                <li>
+                    <a href="#about-section" class="nav-link active" onclick="closeSidebar()">Artikel</a>
+                    <div class="nav-active-border"></div>
+                </li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= header section ================= -->
+
+    <section class="header">
+        <div class="container">
+            <div class="title">
+                <div class="details">
+                    <p> Diterbitkan April 30, 2023 </p>
+                </div>
+                <div class="title-txt">
+                    <p> Persiapan Pilpres 2024, Sudah Siapkah Kamu Dengan Pilihan Mu ? </p>
+                </div>
+                <div class="sub-title">
+                    <p> Tentukan Pilihan Mu </p>
+                </div>
+                <div class="tags">
+                    <div class="box">
+                        <p> Politik </p>
+                    </div>
+                    <div class="box">
+                        <p> Presiden </p>
+                    </div>
+                    <div class="box">
+                        <p> Populer </p>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <img src="../../assets/nice2.jpg" alt="" width="100%" height="auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= section 2 ================= -->
+
+    <section class="article__content">
+        <div class="container">
+            <div class="content">
+                <div class="txt__content">
+                    <div class="sub__title">
+                        <p> Pilpres 2024 </p>
+                    </div>
+                    <div class="title__txt">
+                        <p> Ganjar, Prabowo, Atau Anies Baswedan ? </p>
+                    </div>
+                    <div class="desc__txt">
+                        <p> Pemilihan Umum Presiden Indonesia 2024, disebut juga <span>Pilpres 2024</span>, adalah
+                            sebuah proses demokrasi untuk <span>memilih
+                                Presiden</span> Republik Indonesia dan Wakil Presiden Republik Indonesia masa bakti
+                            2024-2029 yang akan dilaksanakan pada <span>Rabu,
+                                14 Februari 2024.</span> Pemilihan ini akan menjadi pemilihan presiden dan wakil
+                            presiden langsung yang kelima di Indonesia.
+                        </p>
+                        <p> Bakal Mantan Presiden <span>Joko Widodo</span> dan mantan <span>Presiden Susilo Bambang
+                                Yudhoyono</span> tidak dapat maju kembali dalam pemilihan ini,
+                            karena dicegah oleh konstitusi dan undang-undang yang <span>melarang periode ketiga</span>
+                            untuk seorang presiden. <span>Pemilihan umum</span> ini
+                            akan dilaksanakan bersamaan dengan Pemilihan Umum Anggota DPR RI, DPD RI, dan DPRD <span>di
+                                seluruh Indonesia.</span> Sementara
+                            Pemilihan Umum Kepala Daerah baru akan dilaksanakan pada Rabu, 27 November 2024 </p>
+
+                    </div>
+                    <div class="img">
+                        <div class="wrapper">
+                            <img src="../../assets/pilpres.jpg" alt="">
+                            <div class="red-border"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= section 3 ================= -->
+    
+    <section class="gejala">
+        <div class="content">
+            <div class="txt-content">
+                <div class="sub-title">
+                    <p> Capres 2024 </p>
+                </div>
+                <div class="title-txt">
+                    <p> Calon Presiden 2024 </p>
+                </div>
+                <div class="desc-txt">
+                    <p> Berikut adalah para Calon Presiden tahun masa jabatan 2024-2029 </p>
+                </div>
+            </div>
+            <div class="box-content">
+                <div class="box">
+                    <div class="img-content">
+                        <img src="../../assets/ganjar-removebg-preview.png" alt="">
+                    </div>
+                    <div class="txt">
+                        <p> Ganjar Pranowo </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img-content">
+                        <img src="../../assets/prabowo-removebg-preview.png" alt="">
+                    </div>
+                    <div class="txt">
+                        <p> Prabowo </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img-content">
+                        <img src="../../assets/aniesbas-removebg-preview.png" alt="">
+                    </div>
+                    <div class="txt">
+                        <p> Anies Baswedan </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= section 4 ================= -->
+
+    <section class="penyebaran">
+        <div class="container">
+            <div class="content">
+                <div class="left-content">
+                    <div class="sub-title">
+                        <p> Prediksi </p>
+                    </div>
+                    <div class="title-txt">
+                        <p> Prediksi Hasil Pilpres 2024 </p>
+                    </div>
+                    <div class="txt">
+                        <p>Survei ini dilakukan dengan cara wawancara langsung dengan bantuan kuesioner kepada 1.230
+                            responden di seluruh
+                            Indonesia. Dengan 1.230 responden, margin of error survei ini sebesar 2,8%. Survei dilakukan
+                            pada tanggal 15-25 Juli
+                            2023.</p>
+
+                        <p>Direktur SPIN, Igor Dirgantara, mengatakan hasil survei simulasi tiga capres menunjukkan
+                            Prabowo memiliki elektabilitas
+                            paling tinggi mengalahkan Ganjar dan Anies.</p>
+
+                        <p>"Sebagian besar publik atau 41,7% akan memilih Prabowo Subianto sebagai presiden bila pemilu
+                            serentak dilaksanakan hari
+                            ini dan diikuti oleh tiga capres saja," kata Igor dalam rilis survei SPIN yang disiarkan
+                            secara daring, Jumat
+                            (4/8/2023).</p>
+
+                        <p>"Sementara Ganjar masih berada di posisi kedua dengan 30,3%, dan Anies berada di posisi
+                            ketiga memperoleh 21,0%. Masih
+                            ada 7,0% publik belum punya pilihan," katanya.</p>
+
+                        <p>Berikut hasil survei elektabilitas capres simulasi tiga nama:</p>
+
+                        <p>Prabowo Subianto: 41,7%</p>
+                        <p>Ganjar Pranowo: 30,3%</p>
+                        <p>Anies Baswedan: 21%</p>
+                        <p>Tidak Tahu: 7%</p>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <div class="row">
+                        <div class="box">
+                            <img src="../../assets/prabowo-removebg-preview.png" alt="">
+                            <div class="title">
+                                <p> 41,7% </p>
+                            </div>
+                            <div class="desc-txt">
+                                <h1> Prabowo Subianto</h1>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="../../assets/ganjarkotak.png" alt="">
+                            <div class="title">
+                                <p> 30,3% </p>
+                            </div>
+                            <div class="desc-txt">
+                                <h1> Ganjar Pranomo </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="box">
+                            <img src="../../assets/anieskotak.png" alt="">
+                            <div class="title">
+                                <p> 21% </p>
+                            </div>
+                            <div class="desc-txt">
+                                <h1> Anies Baswedan </h1>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="../../assets/question-mark (1).png" alt="">
+                            <div class="title">
+                                <p> 7% </p>
+                            </div>
+                            <div class="desc-txt">
+                                <h1> Tidak Diketahui </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= footer section ================= -->
+
+    <section class="footer-section">
+        <div class="footer-container">
+            <div class="footer-content">
+                <p class="website-name">Mediaku.</p>
+                <p class="footer-text">Dapatkan update berita terbaru dari kami.</p>
+                <div class="subs-field">
+                    <input type="email" placeholder="Email" id="email" name="email" required>
+                    <div class="subs-btn" id="subsBtn" onclick="showAlert()" disable>
+                        <img src="../../assets/arrow.png" alt="" width="15px" height="15px">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content">
+                <p class="website-name">Tentang</p>
+                <div class="footer-links">
+                    <a href="../../index.html">
+                        <p>Beranda</p>
+                    </a>
+                    <a href="../../index.html#about-section">
+                        <p>Tentang</p>
+                    </a>
+                    <a href="../../index.html#peta-section">
+                        <p>Geografi</p>
+                    </a>
+                    <a href="../../index.html#presiden-section">
+                        <p>Pemimpin</p>
+                    </a>
+                    <a href="../../index.html#article-section">
+                        <p>Artikel</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-content">
+                <p class="website-name">Halaman Detail</p>
+                <div class="footer-links">
+                    <a href="../../index.html">
+                        <p>Beranda</p>
+                    </a>
+                    <a href="../Article_page/article.html">
+                        <p>Artikel</p>
+                    </a>
+                    <a href="#">
+                        <p>Blog</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-content">
+                <p class="website-name">Kontak</p>
+                <div class="footer-links">
+                    <a href="mailto:halo@mediaku.idn">
+                        <p>halo@mediaku.idn</p>
+                    </a>
+                    <p>+62 813 4482 9209</p>
+                    <p>Jln. Gajah Mada, Bandung</p>
+                </div>
+            </div>
+        </div>
+        <p
+            style="position:absolute;bottom:20px;left: 0;width: 100%;text-align: center;opacity: 0.8;color: var(--white);font-weight: 500;font-size: 14px;">
+            Copyright © <span>MediaKu</span> | Designed by <span>Raditya.</span></p>
+    </section>
+
+    <script>
+        function showAlert() {
+                Swal.fire({
+                    title: 'Email mu telah terkirim',
+                    text: 'Terimakasih telah berlangganan.',
+                    icon: 'success',
+                    confirmButtonText: 'Tutup'
+                });
+            }
+    </script>
+</body>
+
+</html>

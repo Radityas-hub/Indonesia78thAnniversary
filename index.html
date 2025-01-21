@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaKu</title>
+    <link rel="shortcut icon" href="./assets/logo.png" />
+
+    <!-- ================= css links ================= -->
+
+    <link rel="stylesheet" href="pages/Landing_page/styles.css">
+    <link rel="stylesheet" href="global-styles.css">
+
+    <!-- ================= SweetAlert2 links ================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+
+    <!-- ================= Font Awesome links ================= -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <!-- 
+        Source Gambar 
+        1. https://id.pinterest.com/pin/835558537089080645/
+        2. https://id.pinterest.com/c26a1e33-0a68-413f-aaa1-57cc8cb8b4af
+        3. https://rakyatntt.com/wp-content/uploads/2023/08/menkominfo.jpg
+        4. https://assets.pikiran-rakyat.com/crop/61x0:723x473/x/photo/2022/09/29/2175796253.jpeg
+        5. https://1.bp.blogspot.com/-pXJp6C0ejpY/YBTmt4PdgrI/AAAAAAAAOGE/M2DyCzdbuBQi9J6sW-BaIf5O_pqMf_TWwCLcBGAsYHQ/s720/snmptn.jpg
+        6. https://asset-2.tstatic.net/aceh/foto/bank/images/DPRD-DKI-Jakarta-dari-Fraksi-PDI-P-Cinta-Mega.jpg
+        7. https://cdn.antaranews.com/cache/1200x800/2023/04/25/Capres-RI_1.jpg
+        8. https://sinpo.id/storage/2022/12/laboratorium-suara-indonesia-rilis-survei-pilpres-2024-ini-hasilnya-16122022-174151.jpg
+        9. https://cdn0-production-images-kly.akamaized.net/CD9wRAPjNi0W7Pv7st5_jQfPdgE=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/4202081/original/074018900_1666614414-Ekspresi_Ganjar_Pranowo_Usai_Pertemuan_di_DPP_PDIP-Faizal-4.jpg
+        10. https://static.republika.co.id/uploads/images/inpicture_slide/ketua-umum-partai-gerindra-prabowo_230725234119-217.jpeg
+        11. https://pict.sindonews.net/dyn/850/pena/news/2023/03/05/12/1038559/perjalanan-karier-politik-anies-baswedan-hingga-menuju-pilpres-2024-zds.jpg
+        12. https://images-tm.tempo.co/all/2022/10/08/812557/812557_1200.jpg
+     -->
+
+    <!-- ================= scroll up btn ================= -->
+
+    <div class="scroll-up-btn">
+        <img src="./Assets/up-arrow.png" alt="" style="width: 20px; height: 20px;">
+    </div>
+
+    <!-- ================= navbar ================= -->
+
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <img src="./assets/HUT RI 78_Logo Utama (Warna).png" alt="" class="logo-images">
+                <a href="#">Mediaku</a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn" onclick="closeSidebar()">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li>
+                    <a href="#header-section" class="nav-link active" onclick="closeSidebar()">Beranda</a>
+                    <div class="nav-active-border"></div>
+                </li>
+                <li>
+                    <a href="#about-section" class="nav-link" onclick="closeSidebar()">Tentang</a>
+                    <div class="nav-active-border"></div>
+                </li>
+                <li>
+                    <a href="#peta-section" class="nav-link" onclick="closeSidebar()">Geografi</a>
+                    <div class="nav-active-border"></div>
+                </li>
+                <li>
+                    <a href="#presiden-section" class="nav-link" onclick="closeSidebar()">Pemimpin</a>
+                    <div class="nav-active-border"></div>
+                </li>
+                <li>
+                    <a href="#article-section" class="nav-link" onclick="closeSidebar()">Artikel</a>
+                    <div class="nav-active-border"></div>
+                </li>
+                <li>
+                    <a href="./pages/Login_page/login.html">
+                        <div class="login-btn">Sign In</div>
+                    </a>
+                </li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= header section ================= -->
+
+    <section class="header-section" id="header-section">
+        <div class="container">
+            <div class="header-top-section">
+                <img src="./assets/soekarno.png" alt="" class="header-images">
+                <div class="header-quotes">
+                    <p class="quotes-text">" Bangsa yang besar adalah bangsa yang menghormati jasa pahlawannya. "</p>
+                    <p class="quotes-name">Dr. Ir. Soekarno Hatta</p>
+                </div>
+                <div class="header-sosmed">
+                    <a href="https://youtube.com"> <img src="./assets/youtube.png" alt="" class="medsos-img"> </a>
+                    <a href="https://facebook.com"> <img src="./assets/facebook (9).png" class="medsos-img" alt=""> </a>
+                    <a href="https://instagram.com"> <img src="./assets/instagram (12).png" class="medsos-img" alt=""> </a>
+                </div>
+            </div>
+            <div class="header-bott-section">
+                <div class="header-bott-content">
+                    <p class="header-subtitle">
+                        Demi Indonesia Maju
+                    </p>
+                    <p class="header-title">
+                        Bersama Menyambut Masa Depan Yang Gemilang
+                    </p>
+                        <a href="./pages/Login_page/login.html" class="header-btn">
+                            Get Started
+                        </a>
+                </div>
+                <img src="./assets/soekarno.png" alt="" class="header-images">
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= about section ================= -->
+
+    <div class="about-section" id="about-section">
+        <section class="principle-section">
+            <div class="container">
+                <div class="title">
+                    <p> Pentingnya HUT RI ke-78</p>
+                </div>
+                <div class="content ">
+                    <div class="left-content ">
+                        <div class="child-content">
+                            <div class="title-txt">
+                                <div class="img-content">
+                                    <p> 1 </p>
+                                </div>
+                                <div class="txt"> Bersyukur Kepada Tuhan </div>
+                            </div>
+                            <div class="desc-txt"> Kita harus berterima kasih kepada Tuhan atas kesempatan yang kita miliki untuk membangun negeri ini menjadi lebih baik.
+                            </div>
+                        </div>
+                        <div class="child-content">
+                            <div class="title-txt">
+                                <div class="img-content">
+                                    <p> 2 </p>
+                                </div>
+                                <div class="txt"> Mengingat Jasa Pahlawan </div>
+                            </div>
+                            <div class="desc-txt"> Kita harus meneruskan perjuangan mereka dengan mengisi kemerdekaan dengan prestasi, karya, dan kontribusi yang
+                            bermanfaat bagi bangsa .
+                         </div>
+                        </div>
+                    </div>
+                    <div class="center-content">
+                        <img src="./assets/Group 17.png" alt="">
+                    </div>
+                    <div class="right-content">
+                        <div class="child-content">
+                            <div class="title-txt">
+                                <div class="img-content">
+                                    <p> 3 </p>
+                                </div>
+                                <div class="txt"> Semangat Masa Depan </div>
+                            </div>
+                            <div class="desc-txt"> Kita harus berani menghadapi tantangan dan perubahan yang terjadi di era globalisasi dan digitalisasi. </div>
+                        </div>
+                        <div class="child-content">
+                            <div class="title-txt">
+                                <div class="img-content">
+                                    <p> 4 </p>
+                                </div>
+                                <div class="txt"> Memperkuat Kebersamaan </div>
+                            </div>
+                            <div class="desc-txt"> Kita harus saling bahu-membahu, gotong-royong, dan kerjasama untuk menciptakan Indonesia yang harmonis, toleran, dan
+                            damai.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= peran generasi muda section ================= -->
+
+        <section class="about">
+            <div class="container">
+                <div class="content">
+                    <div class="left-content">
+                        <div class="about-img-container">
+                            <div class="about-img-border"></div>
+                            <div class="about-img"></div>
+                        </div>
+                    </div>
+                    <div class="right-content ">
+                        <div class="txt-content ">
+                            <div class="container">
+                                <div class="title-txt ">
+                                    <p> Peran Generasi Muda</p>
+                                </div>
+                                <div class="desc-text">
+                                    <p> Generasi muda adalah harapan dan penerus bangsa yang memiliki tanggung jawab untuk melanjutkan pembangunan dan kemajuan
+                                    Indonesia.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-secondary">
+                            <div class="container">
+                                <div class="kotak kotak-1">
+                                    <div class="about-round-obj">1</div>
+                                    <p>Membangun karakter bangsa.</p>
+                                </div>
+                                <div class="kotak kotak-2">
+                                    <div class="about-round-obj">2</div>
+                                    <p>Mengembangkan ekonomi kreatif.</p>
+                                </div>
+                                <div class="kotak kotak-3">
+                                    <div class="about-round-obj">3</div>
+                                    <p>Menjaga lingkungan hidup.</p>
+                                </div>
+                                <div class="kotak kotak-3">
+                                    <div class="about-round-obj">4</div>
+                                    <p>Harapan masa depan bangsa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ================= peta section ================= -->
+
+    <section class="peta-section" id="peta-section">
+        <div class="container">
+            <p class="peta-title-text">
+                Peta Negara Republik Indonesia
+            </p>
+            <div class="peta-wrapper">
+                <img src="./assets/peta.png" alt="" class="peta">
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= presiden section ================= -->
+
+    <section class="presiden-section" id="presiden-section">
+        <div class="container">
+            <div class="presiden-left-section">
+                <div class="presiden-content">
+                    <div class="presiden-title">
+                        <p> Presiden Republik Indonesia </p>
+                    </div>
+                    <div class="presiden-subtitle">
+                        <p> 2014 - 2024 </p>
+                    </div>
+                    <div class="presiden-desc">
+                        <p> Presiden Republik Indonesia ke-7 yang menjabat sejak tahun 2014. Ia lahir di Surakarta, Jawa Tengah, pada tanggal 21
+                        Juni 1961 dari keluarga sederhana. Ayahnya adalah seorang penjual kayu dan bambu, sedangkan ibunya adalah seorang ibu
+                        rumah tangga. Jokowi menempuh pendidikan di Universitas Gadjah Mada, jurusan Kehutanan, dan lulus pada tahun 1985. </p>
+                    </div>
+                    <div class="presiden-btn">
+                        <p>More</p>
+                    </div>
+                </div>
+            </div>
+            <div class="presiden-right-section">
+                <img src="./assets/Jokowi.png" alt="" class="presiden-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= article section ================= -->
+
+    <section class="article-section" id="article-section">
+        <div class="container">
+            <div class="article-title-wrapper">
+                <p class="article-title">Artikel Kami</p>
+                <p class="article-desc">
+                    Yuk cari tahu tentang informasi dan berita terbaru di artikel kami yang selalu kami update
+                </p>
+            </div>
+            <div class="blog-grid-container">
+                <div class="item">
+                    <div class="article-img"></div>
+                    <div class="article-details">
+                        <div class="article-top-content">
+                            <div class="article-date">
+                                <img src="./assets/clock.png" alt="" width="14px" height="14px">
+                                <p>30 April</p>
+                            </div>
+                            <div class="trending-mark">
+                                <img src="./assets/fire (1).png" alt="" width="18px" height="18px">
+                                <p>Trending</p>
+                            </div>
+                        </div>
+                        <div class="article-bott-content">
+                            <p class="article-content-title">Persiapan Pilpres 2025, Sudah Siapkah Kamu Dengan Pilihan
+                                Mu?</p>
+                            <p class="article-content-desc">ini dia calon Presiden Indonesia tahun 2024-2029, siap dengan pilihan mu....</p>
+                            <a href="./pages/Blog_page/blog.html">
+                                <div class="article-btn">Kunjungi</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="article-img"></div>
+                    <div class="article-details">
+                        <div class="article-top-content">
+                            <div class="article-date">
+                                <img src="./assets/clock.png" alt="" width="14px" height="14px">
+                                <p>20 Juni</p>
+                            </div>
+                            <div class="trending-mark">
+                                <img src="./assets/fire (1).png" alt="" width="18px" height="18px">
+                                <p>Trending</p>
+                            </div>
+                        </div>
+                        <div class="article-bott-content">
+                            <p class="article-content-title">Heboh! "Buat apa internet cepat ?" Sebut Johnny G Plate, Tersangka....</p>
+                            <p class="article-content-desc">Tersangka kasus korupsi Johnny G Plate, terlihat tidak ada rasa penyesalan atas...</p>
+                            <a href="./pages/Article_page/article.html">
+                                <div class="article-btn">Kunjungi</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="article-img"></div>
+                    <div class="article-details">
+                        <div class="article-top-content">
+                            <div class="article-date">
+                                <img src="./assets/clock.png" alt="" width="14px" height="14px">
+                                <p>12 Mei</p>
+                            </div>
+                            <div class="trending-mark">
+                                <img src="./assets/fire (1).png" alt="" width="18px" height="18px">
+                                <p>Trending</p>
+                            </div>
+                        </div>
+                        <div class="article-bott-content">
+                            <p class="article-content-title">Rizky Billar Cerai, Ini Pendapat Lesti Kejora.</p>
+                            <p class="article-content-desc">Risky Billar gugat cerai Lesti Kejora, ini fakta fakta dibaliknya....</p>
+                            <a href="./pages/Article_page/article.html">
+                                <div class="article-btn">Kunjungi</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="article-img"></div>
+                    <div class="article-details">
+                        <div class="article-top-content">
+                            <div class="article-date">
+                                <img src="./assets/clock.png" alt="" width="14px" height="14px">
+                                <p>28 September</p>
+                            </div>
+                        </div>
+                        <div class="article-bott-content">
+                            <p class="article-content-title">Heboh! Muncul Kasus Wabah Flu Baru Di China. Penerus Covid-19 ?</p>
+                            <p class="article-content-desc">Telah ditemukan kasus wabah flu baru di China, yang saat ini masih....</p>
+                            <a href="./pages/Article_page/article.html">
+                                <div class="article-btn">Kunjungi</div>
+                            </a>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="article-img"></div>
+                    <div class="article-details">
+                        <div class="article-top-content">
+                            <div class="article-date">
+                                <img src="./assets/clock.png" alt="" width="14px" height="14px">
+                                <p>13 Januari</p>
+                            </div>
+                        </div>
+                        <div class="article-bott-content">
+                            <p class="article-content-title">Ini Dia! Tips Dan Bocoran Soal SNMPTN Tahun 2024.</p>
+                            <p class="article-content-desc">Halo para pejuang SNMPTN, ini dia tips dan bocoran soal SNMPTN tahun 2024....</p>
+                            <a href="./pages/Article_page/article.html">
+                                <div class="article-btn">Kunjungi</div>
+                            </a>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="article-img"></div>
+                    <div class="article-details">
+                        <div class="article-top-content">
+                            <div class="article-date">
+                                <img src="./assets/clock.png" alt="" width="14px" height="14px">
+                                <p>20 Mei</p>
+                            </div>
+                        </div>
+                        <div class="article-bott-content">
+                            <p class="article-content-title">Heboh! Terduga Anggota DPRD Terciduk Bermain Slot Saat Rapat.</p>
+                            <p class="article-content-desc">Terduga anggota DPRD terciduk sedang bermain slot saat rapat....</p>
+                            <a href="./pages/Article_page/article.html">
+                                <div class="article-btn">Kunjungi</div>
+                            </a>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= footer section ================= -->
+
+    <section class="footer-section">
+        <div class="footer-container">
+            <div class="footer-content">
+                <p class="website-name">Mediaku.</p>
+                <p class="footer-text">Dapatkan update berita terbaru dari kami.</p>
+                <div class="subs-field">
+                    <input type="email" placeholder="Email" id="email" name="email" required>
+                    <div class="subs-btn" id="subsBtn" onclick="showAlert()" disable>
+                        <img src="./assets/arrow.png" alt="" width="15px" height="15px">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content">
+                <p class="website-name">Tentang</p>
+                <div class="footer-links">
+                    <a href="#"><p>Beranda</p></a>
+                    <a href="#about-section"><p>Tentang</p></a>
+                    <a href="#peta-section"><p>Geografi</p></a>
+                    <a href="#presiden-section"><p>Pemimpin</p></a>
+                    <a href="#article-section"><p>Artikel</p></a>
+                </div>
+            </div>
+            <div class="footer-content">
+                <p class="website-name">Halaman Detail</p>
+                <div class="footer-links">
+                    <a href="#"> <p>Beranda</p> </a>
+                    <a href="./pages/Article_page/article.html"><p>Artikel</p></a>
+                    <a href="./pages/Blog_page/blog.html"><p>Blog</p></a>
+                </div>
+            </div>
+            <div class="footer-content">
+                <p class="website-name">Kontak</p>
+                <div class="footer-links">
+                    <a href="mailto:halo@mediaku.idn"><p>halo@mediaku.idn</p></a>
+                    <p>+62 813 4482 9209</p>
+                    <p>Jln. Gajah Mada, Bandung</p>
+                </div>
+            </div>
+        </div>
+            <p class="copyright" style="position:absolute;bottom:20px;left: 0;width: 100%;text-align: center;opacity: 0.8;color: var(--white);font-weight: 500;font-size: 14px;">Copyright © <span>MediaKu</span> | Designed by <span>Raditya.</span></p>
+    </section>
+
+    <script src="./pages/Landing_page/index.js"></script>
+    <script>
+        function showAlert() {
+            Swal.fire({
+                title: 'Email mu telah terkirim',
+                text: 'Terimakasih telah berlangganan.',
+                icon: 'success',
+                confirmButtonText: 'Tutup'
+            });
+        }
+    </script>
+</body>
+
+</html>

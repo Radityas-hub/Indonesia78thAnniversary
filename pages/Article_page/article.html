@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel - Mediaku</title>
+    <link rel="shortcut icon" href="../../assets/logo.png" />
+
+    <!-- ================= css links ================= -->
+
+    <link rel="stylesheet" href="./article-styles.css">
+    <link rel="stylesheet" href="../../global-styles.css">
+
+    <!-- ================= SweetAlert2 links ================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+
+    <!-- ================= Font Awesome links ================= -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+</head>
+
+<body>
+
+    <!-- 
+        Source Gambar 
+        1. https://id.pinterest.com/pin/835558537089080645/
+        2. https://id.pinterest.com/c26a1e33-0a68-413f-aaa1-57cc8cb8b4af
+        3. https://rakyatntt.com/wp-content/uploads/2023/08/menkominfo.jpg
+        4. https://assets.pikiran-rakyat.com/crop/61x0:723x473/x/photo/2022/09/29/2175796253.jpeg
+        5. https://1.bp.blogspot.com/-pXJp6C0ejpY/YBTmt4PdgrI/AAAAAAAAOGE/M2DyCzdbuBQi9J6sW-BaIf5O_pqMf_TWwCLcBGAsYHQ/s720/snmptn.jpg
+        6. https://asset-2.tstatic.net/aceh/foto/bank/images/DPRD-DKI-Jakarta-dari-Fraksi-PDI-P-Cinta-Mega.jpg
+        7. https://cdn.antaranews.com/cache/1200x800/2023/04/25/Capres-RI_1.jpg
+        8. https://sinpo.id/storage/2022/12/laboratorium-suara-indonesia-rilis-survei-pilpres-2024-ini-hasilnya-16122022-174151.jpg
+        9. https://cdn0-production-images-kly.akamaized.net/CD9wRAPjNi0W7Pv7st5_jQfPdgE=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/4202081/original/074018900_1666614414-Ekspresi_Ganjar_Pranowo_Usai_Pertemuan_di_DPP_PDIP-Faizal-4.jpg
+        10. https://static.republika.co.id/uploads/images/inpicture_slide/ketua-umum-partai-gerindra-prabowo_230725234119-217.jpeg
+        11. https://pict.sindonews.net/dyn/850/pena/news/2023/03/05/12/1038559/perjalanan-karier-politik-anies-baswedan-hingga-menuju-pilpres-2024-zds.jpg
+        12. https://images-tm.tempo.co/all/2022/10/08/812557/812557_1200.jpg       
+    -->
+
+    <!-- ================= Navbar ================= -->
+
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <a href="#">Mediaku</a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn" onclick="closeSidebar()">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li>
+                    <a href="../../index.html" class="nav-link" onclick="closeSidebar()">Beranda</a>
+                    <div class="nav-active-border"></div>
+                </li>
+                <li>
+                    <a href="#about-section" class="nav-link active" onclick="closeSidebar()">Artikel</a>
+                    <div class="nav-active-border"></div>
+                </li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= article section ================= -->
+
+    <section class="article-section">
+        <div class="container">
+
+            <div class="article-top-wrapper">
+                <p class="article-title-section">Artikel Kami</p>
+                <div class="controls search-bar" id="controls">
+                    <img src="../../assets/search.png" alt="" class="search-icon">
+                    <input type="text" placeholder="Cari berdasarkan judul" data-ref="input-search"
+                        class="search-field">
+                </div>
+            </div>
+
+            <div class="article-main-container" data-ref="container">
+                <div class="article-wrapper">
+
+                    <div class="mix all persiapan pilpres 2024, sudah siapkah kamu dengan pilihan mu article-box">
+                        <img src="../../assets/pilpres.jpg" alt="" class="article-img">
+                        <div class="article-details">
+                            <div class="article-date-container">
+                                <div class="details-container">
+                                    <img src="../../assets/clock.png" alt="" class="date-icon">
+                                    <p>April 30, 2023</p>
+                                </div>
+                                <div class="details-container">
+                                    <img src="../../assets/admin.svg" alt="" class="date-icon">
+                                    <p>Admin</p>
+                                </div>
+                                <div class="details-container">
+                                    <img src="../../assets/comment.svg" alt="" class="date-icon">
+                                    <p>Tidak ada komentar</p>
+                                </div>
+                            </div>
+                            <p class="article-title-text">Persiapan Pilpres 2024, Sudah Siapkah Kamu Dengan Pilihan Mu?
+                            </p>
+                            <p class="article-desc-text">ni dia calon Presiden Indonesia tahun 2024-2029, siap dengan pilihan mu......</p>
+                            <a href="../Blog_page/blog.html">
+                                <div class="article-btn">Kunjungi</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mix all new baru terbaru heboh buat apa internet sebut jhonny g plate tersangkat kasus korupsi article-box">
+                        <img src="../../assets/johny.jpg" alt="" class="article-img">
+                        <div class="article-details">
+                            <div class="article-date-container">
+                                <div class="details-container">
+                                    <img src="../../assets/clock.png" alt="" class="date-icon">
+                                    <p>Juni 20, 2023</p>
+                                </div>
+                                <div class="details-container">
+                                    <img src="../../assets/admin.svg" alt="" class="date-icon">
+                                    <p>Admin</p>
+                                </div>
+                                <div class="details-container">
+                                    <img src="../../assets/comment.svg" alt="" class="date-icon">
+                                    <p>Tidak ada komentar</p>
+                                </div>
+                            </div>
+                            <p class="article-title-text">Heboh! "Buat apa internet cepat ?" Sebut Jhonny G Plate,
+                                Tersangka Kasus Korupsi</p>
+                            <p class="article-desc-text">Tersangka kasus korupsi Johnny G Plate, terlihat tidak ada rasa penyesalan atas.....</p>
+                            <div class="article-btn">Kunjungi</div>
+                        </div>
+                    </div>
+
+                    <div class="mix all risky billar cerai ini pendapat lesti kejora article-box">
+                        <img src="../../assets/riskibilar.jpg" alt="" class="article-img">
+                        <div class="article-details">
+                            <div class="article-date-container">
+                                <div class="details-container">
+                                    <img src="../../assets/clock.png" alt="" class="date-icon">
+                                    <p>Mei 12, 2023</p>
+                                </div>
+                                <div class="details-container">
+                                    <img src="../../assets/admin.svg" alt="" class="date-icon">
+                                    <p>Admin</p>
+                                </div>
+                                <div class="details-container">
+                                    <img src="../../assets/comment.svg" alt="" class="date-icon">
+                                    <p>Tidak ada komentar</p>
+                                </div>
+                            </div>
+                            <p class="article-title-text">Rizky Billar Cerai, Ini Pendapat Lesti Kejora.</p>
+                            <p class="article-desc-text">Risky Billar gugat cerai Lesti Kejora, ini fakta fakta dibaliknya......</p>
+                            <div class="article-btn">Kunjungi</div>
+                        </div>
+                    </div>
+
+                    <div class="mix all heboh muncul kasus wabah flu baru di china article-box">
+                        <img src="../../assets/virus.jpg" alt="" class="article-img">
+                        <div class="article-details">
+                            <div class="article-date-container">
+                                <div class="details-container">
+                                    <img src="../../assets/clock.png" alt="" class="date-icon">
+                                    <p>Juli 10 2024</p>
+                                </div>
+                                <div class="details-container">
+                                    <img src="../../assets/admin.svg" alt="" class="date-icon">
+                                    <p>Admin</p>
+                                </div>
+                                <div class="details-container">
+                                    <img src="../../assets/comment.svg" alt="" class="date-icon">
+                                    <p>Tidak ada komentar</p>
+                                </div>
+                            </div>
+                            <p class="article-title-text">Heboh! Muncul Kasus Wabah Flu Baru Di China. Penerus Covid-19
+                                ?</p>
+                            <p class="article-desc-text">Telah ditemukan kasus wabah flu baru di China, yang saat ini masih....</p>
+                            <div class="article-btn">Kunjungi</div>
+                        </div>
+                    </div>
+
+                    <div class="mix all new baru terbaru ini dia tips dan bocoran soal snmptn 2024 article-box">
+                        <img src="../../assets/snmptn.jpg" alt="" class="article-img">
+                        <div class="article-details">
+                            <div class="article-date-container">
+                                <div class="details-container">
+                                    <img src="../../assets/clock.png" alt="" class="date-icon">
+                                    <p>Januari 13 2023</p>
+                                </div>
+                                <div class="details-container">
+                                    <img src="../../assets/admin.svg" alt="" class="date-icon">
+                                    <p>Admin</p>
+                                </div>
+                                <div class="details-container">
+                                    <img src="../../assets/comment.svg" alt="" class="date-icon">
+                                    <p>Tidak ada komentar</p>
+                                </div>
+                            </div>
+                            <p class="article-title-text">Ini Dia! Tips Dan Bocoran Soal SNMPTN Tahun 2024.</p>
+                            <p class="article-desc-text">Halo para pejuang SNMPTN, ini dia tips dan bocoran soal SNMPTN tahun 2024..</p>
+                            <div class="article-btn">Kunjungi</div>
+                        </div>
+                    </div>
+
+                    <div class=" mix all new popular baru terbaru ramai heboh terduga anggota dprd terciduk bermain slot saat rapat article-box">
+                        <img src="../../assets/gacor_banggg.jpg" alt="" class="article-img">
+                        <div class="article-details">
+                            <div class="article-date-container">
+                                <div class="details-container">
+                                    <img src="../../assets/clock.png" alt="" class="date-icon">
+                                    <p>Mei 20, 2023</p>
+                                </div>
+                                <div class="details-container">
+                                    <img src="../../assets/admin.svg" alt="" class="date-icon">
+                                    <p>Admin</p>
+                                </div>
+                                <div class="details-container">
+                                    <img src="../../assets/comment.svg" alt="" class="date-icon">
+                                    <p>Tidak ada komentar</p>
+                                </div>
+                            </div>
+                            <p class="article-title-text">Heboh! Terduga Anggota DPRD Terciduk Bermain Slot Saat Rapat.
+                            </p>
+                            <p class="article-desc-text">Terduga anggota DPRD terciduk sedang bermain slot saat rapat....</p>
+                            <div class="article-btn">Kunjungi</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-content-wrapper">
+                    <div class="new-post-container">
+                        <p class="post-title">Postingan Terbaru</p>
+                        <div class="new-post">
+                            <a href="../Blog_page/blog.html">
+                                <div class="post">
+                                        <img src="../../assets/pilpres.jpg" alt="" class="post-img">
+                                        <div class="post-text">
+                                            <p class="post-title-text">Persiapan Pilpres 2024, Sudah Siapkah Kamu Dengan Pilihan
+                                                Mu ?</p>
+                                            <p class="date-post">April 30, 2023</p>
+                                        </div>
+                                </div>
+                            </a>
+                            <div class="post">
+                                <img src="../../assets/riskibilar.jpg" alt="" class="post-img">
+                                <div class="post-text">
+                                    <p class="post-title-text">Rizky Billar Cerai, Ini Pendapat Lesti Kejora.</p>
+                                    <p class="date-post">Mei 12, 2023</p>
+                                </div>
+                            </div>
+                            <div class="post">
+                                <img src="../../assets/snmptn.jpg" alt="" class="post-img">
+                                <div class="post-text">
+                                    <p class="post-title-text">Ini Dia! Tips Dan Bocoran Soal SNMPTN Tahun 2024.</p>
+                                    <p class="date-post">Januari 13 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tag-container">
+                        <p class="tag-title">Kategori</p>
+                        <div class="controls tag-wrapper" id="controls">
+                            <a href="#">
+                                <div class="control tag-box active" data-filter=".mix" id="scroll">
+                                    <p>Semua</p>
+                                    <p>(6)</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="control tag-box" data-filter=".new" id="scroll">
+                                    <p>Terbaru</p>
+                                    <p>(3)</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="control tag-box" data-filter=".popular" id="scroll">
+                                    <p>Trending</p>
+                                    <p>(1)</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= footer section ================= -->
+
+    <section class="footer-section">
+        <div class="footer-container">
+            <div class="footer-content">
+                <p class="website-name">Mediaku.</p>
+                <p class="footer-text">Dapatkan update berita terbaru dari kami.</p>
+                <div class="subs-field">
+                    <input type="email" placeholder="Email" id="email" name="email" required>
+                    <div class="subs-btn" id="subsBtn" onclick="showAlert()" disable>
+                        <img src="../../assets/arrow.png" alt="" width="15px" height="15px">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content">
+                <p class="website-name">Tentang</p>
+                <div class="footer-links">
+                    <a href="../../index.html">
+                        <p>Beranda</p>
+                    </a>
+                    <a href="../../index.html#about-section">
+                        <p>Tentang</p>
+                    </a>
+                    <a href="../../index.html#peta-section">
+                        <p>Geografi</p>
+                    </a>
+                    <a href="../../index.html#presiden-section">
+                        <p>Pemimpin</p>
+                    </a>
+                    <a href="../../index.html#article-section">
+                        <p>Artikel</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-content">
+                <p class="website-name">Halaman Detail</p>
+                <div class="footer-links">
+                    <a href="../../index.html">
+                        <p>Beranda</p>
+                    </a>
+                    <a href="#">
+                        <p>Artikel</p>
+                    </a>
+                    <a href="../Blog_page/blog.html">
+                        <p>Blog</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-content">
+                <p class="website-name">Kontak</p>
+                <div class="footer-links">
+                    <a href="mailto:halo@mediaku.idn">
+                        <p>halo@mediaku.idn</p>
+                    </a>
+                    <p>+62 813 4482 9209</p>
+                    <p>Jln. Gajah Mada, Bandung</p>
+                </div>
+            </div>
+        </div>
+        <p
+            style="position:absolute;bottom:20px;left: 0;width: 100%;text-align: center;opacity: 0.8;color: var(--white);font-weight: 500;font-size: 14px;">
+            Copyright © <span>MediaKu</span> | Designed by <span>Raditya.</span></p>
+    </section>
+
+    <!-- ================= library links ================= -->
+
+    <script src="../../library/mixitup.js"></script>
+    <script src="../../library/mixitup.min.js"></script>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
